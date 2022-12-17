@@ -1,15 +1,11 @@
+import Avatar from "./Avatar";
 import Card from "./Card";
 
-export default function PostFormCard({onPost}) {
+export default function PostFormCard({ onPost }) {
   return (
     <Card>
       <div className="flex gap-2">
-        <div className="w-12 h-12 rounded-full overflow-hidden">
-          <img
-            src="https://api.lorem.space/image/face?w=50&h=50&hash=6yb0hv3h"
-            alt="user avatar"
-          />
-        </div>
+        <Avatar url="https://api.lorem.space/image/face?w=50&h=50&hash=6yb0hv3h" />
         <textarea
           className="grow p-3 h-14"
           placeholder={`Whats on your mind?`}
@@ -18,11 +14,7 @@ export default function PostFormCard({onPost}) {
       <div className="flex gap-5 items-center mt-2">
         <div>
           <label className="flex gap-1">
-            <input
-              type="file"
-              className="hidden"
-              multiple
-            />
+            <input type="file" className="hidden" multiple />
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -103,9 +95,7 @@ export default function PostFormCard({onPost}) {
           </button>
         </div>
         <div className="grow text-right">
-          <button
-            className="bg-socialBlue text-white px-6 py-1 rounded-md"
-          >
+          <button className="bg-socialBlue text-white px-6 py-1 rounded-md">
             Share
           </button>
         </div>
