@@ -5,7 +5,7 @@ import BellAlertIcon from "./icons/BellAlertIcon";
 import BookmarkIcon from "./icons/BookmarkIcon";
 import BookmarkSlashIcon from "./icons/BookmarkSlashIcon";
 import ExclamationTriangleIcon from "./icons/ExclamationTriangleIcon";
-import FriendsIcon from "./icons/FriendsIcon";
+import UserGroupIcon from "./icons/UserGroupIcon";
 import HomeIcon from "./icons/HomeIcon";
 import LogoutIcon from "./icons/LogoutIcon";
 import TrashCanIcon from "./icons/TrashCanIcon";
@@ -40,8 +40,8 @@ export default function NavigationItem({
     case "exclamation-triangle":
       iconComponent = ExclamationTriangleIcon();
       break;
-    case "friends":
-      iconComponent = FriendsIcon();
+    case "user-group":
+      iconComponent = UserGroupIcon();
       break;
     case "home":
       iconComponent = HomeIcon();
