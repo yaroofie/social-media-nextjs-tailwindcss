@@ -12,7 +12,7 @@ export default function NavigationCard() {
       icon: "home",
     },
     {
-      to: "/friends",
+      to: "/profile/1/friends",
       title: "Friends",
       icon: "user-group",
     },
