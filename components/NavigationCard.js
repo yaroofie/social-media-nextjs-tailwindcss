@@ -1,8 +1,10 @@
+import { useRouter } from "next/router";
 import Card from "./Card";
 import NavigationItem from "./NavigationItem";
 
 export default function NavigationCard() {
-  const pathname = "/";
+  const router = useRouter();
+  const { pathname } = router;
   const routes = [
     {
       to: "/",
@@ -12,7 +14,7 @@ export default function NavigationCard() {
     {
       to: "/friends",
       title: "Friends",
-      icon: "friends",
+      icon: "user-group",
     },
     {
       to: "/saved",
