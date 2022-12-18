@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import BellIcon from "./icons/BellIcon";
 import BellAlertIcon from "./icons/BellAlertIcon";
 import BookmarkIcon from "./icons/BookmarkIcon";
@@ -8,6 +10,7 @@ import HomeIcon from "./icons/HomeIcon";
 import LogoutIcon from "./icons/LogoutIcon";
 import TrashCanIcon from "./icons/TrashCanIcon";
 import XMarkIcon from "./icons/XMarkIcon";
+
 export default function NavigationItem({
   to,
   title,
@@ -55,7 +58,7 @@ export default function NavigationItem({
   }
   
   return (
-    <a
+    <Link
       href={to}
       onClick={(e) => {
         if (handler) {
@@ -67,7 +70,7 @@ export default function NavigationItem({
     >
       {iconComponent}
       <span className="hidden md:block">{title}</span>
-    </a>
+    </Link>
   );
 }
 
