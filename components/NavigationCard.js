@@ -4,7 +4,7 @@ import NavigationItem from "./NavigationItem";
 
 export default function NavigationCard() {
   const router = useRouter();
-  const { pathname } = router;
+  const { asPath: pathname } = router;
   const routes = [
     {
       to: "/",
