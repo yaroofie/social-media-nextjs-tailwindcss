@@ -1,6 +1,7 @@
 import Avatar from "./Avatar";
 import Card from "./Card";
 import { useState } from "react";
+import Link from "next/link";
 import OutsideClickHandler from "react-outside-click-handler";
 import NavigationItem from "./NavigationItem";
 
@@ -45,19 +46,19 @@ export default function PostCard() {
       {/* Auther Info */}
       <div className="flex gap-3">
         <div>
-          <a href={"/profile"}>
+          <Link href={"/profile"}>
             <span className="cursor-pointer">
               <Avatar url="https://api.lorem.space/image/face?w=50&h=50&hash=6yb0hv3h" />
             </span>
-          </a>
+          </Link>
         </div>
         <div className="grow">
           <p>
-            <a href={"/profile/1"}>
+            <Link href={"/profile/1"}>
               <span className="mr-1 font-semibold cursor-pointer hover:underline">
                 yaroofie
               </span>
-            </a>
+            </Link>
             shared a post
           </p>
           <p className="text-gray-500 text-sm">2 hours ago</p>
