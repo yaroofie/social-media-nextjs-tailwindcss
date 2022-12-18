@@ -27,7 +27,7 @@ export default function NavigationCard() {
       icon: "bell",
     },
     {
-      to: "/logout",
+      to: "/login",
       title: "Logout",
       icon: "logout",
     },
@@ -42,6 +42,7 @@ export default function NavigationCard() {
             key={route.to}
             title={route.title}
             icon={route.icon}
+            handler={router.handler}
             isActive={pathname == route.to}
           />
         ))}
